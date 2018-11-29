@@ -24,8 +24,8 @@ drawBackground();
 const fireballImg = new Image();
 const supermanImg = new Image();
 
-fireballImg.src = "./images/fireball.png";
-supermanImg.src = "./images/superman.png";
+fireballImg.src = "images/fireball.png";
+supermanImg.src = "/images/superman.png";
 
 let fireballX = 800;
 let fireballY = 200;
@@ -132,13 +132,13 @@ function gameOver(){
     drawBackground();
     
     const deadSupermanImg = new Image();
-    deadSupermanImg.src = "./images/deadsuperman.png";
+    deadSupermanImg.src = "images/deadsuperman.png";
     deadSupermanImg.onload = function(){
       ctx.drawImage(deadSupermanImg, 480, 300, 150, 150);
     }
 
     isOver = true;
-    ctx.font = "bold 70px Monospace";
+    ctx.font = "bold 70px Arial";
     ctx.fillStyle = "red";
     ctx.fillText("GAME OVER", 400, 225);
 }
